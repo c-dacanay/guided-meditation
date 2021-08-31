@@ -4,6 +4,7 @@ html, body {
   margin: 0;
   /* debug */
   overflow: hidden;
+  scroll-behavior: smooth;
 }
 
 #wrapper {
@@ -23,23 +24,34 @@ div {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-
+  padding-top: 65%;
 }
 
 textarea {
   display: block;
   resize: none;
-  /* width: 30%; */
+  padding: 1em;
 }
 
 label {
-  padding-top: 100%;
+  /* padding-top: 200%; */
   display: block;
+  margin-bottom: 2em;
+}
+
+input[type="submit" i] {
+  color: whitesmoke;
+  background-color: black;
+  padding:5px 15px; 
+  border:0 none;
+  cursor:pointer;
+  -webkit-border-radius: 5px;
+  border-radius: 5px; 
+  margin-top: 10px;
 }
 
 #test {
   z-index: 100;
-  position: absolute;
   padding: 0;
   padding-top: 4em;
   width: 100%;
