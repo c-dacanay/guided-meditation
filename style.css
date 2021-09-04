@@ -11,19 +11,51 @@ div {
   border: 1px solid black;
 }
 
-#wrapper {
-  z-index: 0;
-  border: 1px solid red;
-  /* width: 50%; */
+h1 {
+  padding-top: 20vh;
+}
+
+#colorfeel {
+width: 150px;
+height: 60px;
+margin: auto;
+display: block;
+}
+
+.beads {
+  width: 15%;
+  height: 98vh;
+  background-color: red;
+  min-height: 200px;
+  min-width: 40px;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0%;
+  }
+
+.main {
+  width: 85%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+}
+
+.main,
+.beads {
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.wrapper {
+  display: flex;
+  border: 1px solid red;
   text-align: center;
+  /* justify-content: space-between; */
 }
 
 .question {
   border: 1px solid black;
-  width:  60%;
+  /* width:  60%; */
   padding: 3em;
   margin: 0 auto;
   display: flex;
@@ -32,9 +64,10 @@ div {
 }
 
 textarea {
-  display: block;
+  margin: 0;
   resize: none;
   padding: 1em;
+  max-width: 600px;
 }
 
 label {
@@ -51,27 +84,5 @@ input[type="submit" i] {
   -webkit-border-radius: 5px;
   border-radius: 5px; 
   margin-top: 10px;
-}
-
-#test {
-  z-index: 1;
-  padding: 0;
-  padding-top: 4em;
-  width: 100%;
-  text-align: center;
-}
-
-#beads {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  width: 80px;
-  display: flex;
-  flex-direction: row;
-/* } */
-  /* height: 100%;
-  z-index: 2;
-  margin: 0;
-  padding: 0;
-  width: 80px; */
+  max-width: 600px;
 }
