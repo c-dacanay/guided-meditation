@@ -2,15 +2,24 @@ console.log('ayooooo')
 let colorFeel = document.getElementById('colorfeel');
 let defaultColor = "#0000ff";
 let praySequence = [];
+let sequence = 0;
 
 let feeling = document.getElementById('feel')
-console.log(feel)
+let keySequence = document.getElementsByClassName('svgKey')
+console.log(keySequence)
 
+// Get all the inputs
 function prayer(a) {
     console.log(a)
-    let question = document.getElementById(a).value
-    praySequence.push(question)
-    console.log(praySequence)
+    //put the responses into an array
+    if (a) {
+        let question = document.getElementById(a).value
+        praySequence.push(question)
+        console.log(praySequence)
+    }
+    keySequence[sequence].style.fill = 'white';
+    sequence++
+    console.log(keySequence[sequence])
 }
 
 //Colors
