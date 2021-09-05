@@ -38,10 +38,8 @@
         <circle cx="45" cy="25" r="10"/>
       </svg> -->
 
-
     </div>
-
-    <div class="main">
+    <div class="main" id="intros">
       <div id="title">
       <h1>text text</h1> 
       <p><a href="#first">let's begin</a></p> 
@@ -50,21 +48,21 @@
         <label for="feel">Describe how you are you feeling</label>
         <textarea id="feel" name="feel"
                   rows="2" cols="33"></textarea>
-        <a href="#colorbox"><input type="button" value="This is how I'm feeling." onclick="prayer('feel'
+        <a href="#colorbox"><input type="button" value="This is how I'm feeling." onclick="prayerPrep('feel'
         )"></a>
            <details><summary>I don't know how</summary><li>Describe the tension in your body</li><li>Describe the thoughts that are in your mind</li><li>Describe how you arrived to this website</li></details>
         </div>
         <div class="question" id="colorbox">
           <label for="colorfeel">What color is your feeling?</label>
         <input type="color" id="colorfeel" name="colorfeel"
-        value="#666666" onclick="prayer()">
+        value="#666666" onclick="prayerPrep()">
         </div>
         
         <div class="question" id="mantrabox">
         <label for="mantra">Consider a mantra to help you work through this feeling.</label>
         <textarea id="mantra" name="mantra"
                   rows="2" cols="33"></textarea>
-        <a href="#blessingbox"><input type="button" value="This is my mantra." onclick="prayer('mantra'
+        <a href="#blessingbox"><input type="button" value="This is my mantra." onclick="prayerPrep('mantra'
           )"></a>
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
@@ -73,7 +71,7 @@
         <label for="blessing">Identify a blessing in your life. Write something about it. </label>
         <textarea id="blessing" name="blessing"
                   rows="2" cols="33"></textarea>
-        <a href="#beautybox"><input type="button" value="This is a blessing." onclick="prayer('blessing'
+        <a href="#beautybox"><input type="button" value="This is a blessing." onclick="prayerPrep('blessing'
           )"></a>
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
@@ -81,10 +79,15 @@
         <label for="beauty">Write something true and beautiful about the world.  </label>
         <textarea id="beauty" name="beauty"
                   rows="2" cols="33"></textarea>
-        <a href="#first"><input type="button" value="This is true and beautiful." onclick="prayer('beauty'
-          )"></a>
+<input type="button" value="This is true and beautiful." onclick="prayerPrep('beauty'
+          )">
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
+    </div>
+    <div id="prayer">
+      <div class="prayer-display" id="prayerDisplay">
+      </div>
+      <textarea id="prayerInput" class="prayer-input" autofocus></textarea>
     </div>
   </div>
 
