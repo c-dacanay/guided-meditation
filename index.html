@@ -6,9 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
   <title>Document</title>
-  <style>
-
-  </style>
 </head>
 <body>
   <div class="wrapper">
@@ -23,51 +20,51 @@
     </div>
 
     <div class="main">
+      <div id="title">
       <h1>text text</h1> 
       <p><a href="#first">let's begin</a></p> 
-
+      </div>
       <div id="first" class="question">
         <label for="feel">What are you feeling?</label>
         <textarea id="feel" name="feel"
-                  rows="2" cols="33">
-        </textarea>
-        <input type="submit" value="Send Request">
+                  rows="2" cols="33"></textarea>
+        <a href="#colorbox"><input type="button" value="Send Request" onclick="prayer('feel'
+        )"></a>
         </div>
-        
-        <div class="question">
+        <div class="question" id="colorbox">
           <label for="colorfeel">What color is your feeling?</label>
         <input type="color" id="colorfeel" name="colorfeel"
         value="#666666">
         </div>
         
-        <div class="question">
+        <div class="question" id="mantrabox">
         <label for="mantra">Consider a mantra to help you work through this feeling.</label>
         <textarea id="mantra" name="mantra"
-                  rows="2" cols="33">
-        </textarea>
-        <input type="submit" value="Send Request">
+                  rows="2" cols="33"></textarea>
+        <a href="#blessingbox"><input type="button" value="Send Request" onclick="prayer('mantra'
+          )"></a>
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
         
-        <div class="question">
+        <div class="question" id="blessingbox">
         <label for="blessing">Identify a blessing in your life. Write something about it. </label>
         <textarea id="blessing" name="blessing"
-                  rows="2" cols="33">
-        </textarea>
-        <input type="submit" value="Send Request">
+                  rows="2" cols="33"></textarea>
+        <a href="#beautybox"><input type="button" value="Send Request" onclick="prayer('blessing'
+          )"></a>
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
-        
-        <div class="question">
+        <div class="question" id="beautybox">
         <label for="beauty">Write something true and beautiful about the world.  </label>
         <textarea id="beauty" name="beauty"
-                  rows="2" cols="33">
-        </textarea>
-        <input type="submit" value="Send Request">
+                  rows="2" cols="33"></textarea>
+        <a href="#first"><input type="button" value="Send Request" onclick="prayer('beauty'
+          )"></a>
         <details><summary>Examples</summary><li>x</li><li>y</li><li>z</li></details>
         </div>
-
     </div>
   </div>
+
+  <script src="script.js"></script>
 </body>
 </html>

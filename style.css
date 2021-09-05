@@ -4,15 +4,7 @@ html, body {
   margin: 0;
   scroll-behavior: smooth;
   /* debug */
-  /* overflow: hidden; */
-}
-
-div {
-  border: 1px solid black;
-}
-
-h1 {
-  padding-top: 20vh;
+  overflow: hidden;
 }
 
 #colorfeel {
@@ -20,6 +12,11 @@ width: 150px;
 height: 60px;
 margin: auto;
 display: block;
+}
+
+#title {
+  padding-top: 30vh;
+  height: 100vh
 }
 
 .beads {
@@ -50,17 +47,17 @@ display: block;
   display: flex;
   border: 1px solid red;
   text-align: center;
-  /* justify-content: space-between; */
 }
 
 .question {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   /* width:  60%; */
   padding: 3em;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  padding-top: 75%;
+  padding-top: 30vh;
+  padding-bottom: 30vh;
 }
 
 textarea {
